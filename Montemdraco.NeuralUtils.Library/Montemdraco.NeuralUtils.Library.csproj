@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<OutputPath>..\Build\$(Configuration)\$(Platform)</OutputPath>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Folder Include="Services\Functions\" />
+	  <Folder Include="Interfaces\Net\" />
+	  <Folder Include="Model\Net\" />
+	  <Folder Include="Model\Nodes\" />
+	  <Folder Include="Model\Synapses\" />
+	  <Folder Include="Helpers\" />
+	  <Folder Include="Services\Workers\" />
+	  <Folder Include="Interfaces\Workers\" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<OutputPath>..\Build\$(Configuration)\$(Platform)</OutputPath>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="NUnit" Version="3.12.0" />
+	  <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Montemdraco.NeuralUtils.Library\Montemdraco.NeuralUtils.Library.csproj" />
+	</ItemGroup>
+</Project>
